@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  mode: debug
+
+database:
+  type: sqlite
+  sqlite:
+    path: ./data/news.db
+
+jwt:
+  secret: news-recommend-secret-key-2024
+  expire: 24
+
+log:
+  level: debug
+  filename: ./logs/app.log
+  max_size: 100
+  max_backups: 5
+  max_age: 30
